@@ -1,6 +1,18 @@
 # accelerated-data-generator
 Ultra-fast data generator. It gives you an ability to generate almost 1M of rows in around second. The sample output file has 3 (comma separated) columns. 
  
+```
+jwszol@cluster-d38e-m:~/merge_data$ time bash speed-generator.sh 1000000
+
+real	0m0.914s
+user	0m1.628s
+sys	0m0.304s
+
+jwszol@cluster-d38e-m:~/merge_data$ cat my_csv.csv | wc -l
+*1000000*
+
+```
+
 
 ## Install 
 
